@@ -75,9 +75,12 @@
                 <video width = "320" height = "240" controls>
                     <source src = "whiteboard_video.mp4" type = "video/mp4">
                 </video>
-                <audio controls src = "whiteboard_audio.mp3">
-
-                </audio>
+                <details>
+                    <summary>Audio from Meeting</summary>
+                    <audio controls src = "whiteboard_audio.mp3">
+                    </audio>
+                </details>
+                
             </div>
         </section>
            
@@ -89,5 +92,42 @@
         </h3>
         Send Matt the meeting notes and get him up to speed
     </footer>
+
+    <fieldset>
+        <h3>Post Meeting Form</h3>
+        <form action="/action_page.php" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="date">Today's date:</label>
+            <input type="date" id="date" name="date"><br>
+            <label for="thougts">Meeting ran too long:</label>
+            <label for="reasons"></label><br>
+
+            <textarea id = "reasons">Why did it run too long?</textarea>
+            <input type="radio" id="lname" name="lname"><br>
+            Availiable for happy hour after: <input type="checkbox"> <br>
+
+            <label for="ice-cream-social">Choose flavor for ice cream social:</label> <br>
+            <input list="ice-cream-social">
+            <datalist id="ice-cream-social"= >
+                <option value = "Vanilla"></option>
+                <option value = "Chocolate"></option>
+                <option value = "Strawberry"></option>
+                <option value = "Rocky Road"></option>
+                <option value = "Pistachio"></option>
+            </datalist> <br>
+
+            <label for="toppings">Choose a topping:</label>
+                <select name="Toppings" id="toppings">
+                <option value="Fudge">Fudge</option>
+                <option value="Oreos">Oreos</option>
+                <option value="Peanuts">Peanuts</option>
+                <option value="Caramel">Peanuts</option> 
+                </select> <br>
+            <input type="button" value="Submit"> 
+          </form>
+    </fieldset>
   </body>
 </html>
