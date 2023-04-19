@@ -4,8 +4,9 @@
     <title>Web App First Meeting </title>
     <meta charset="UTF-8" />
     <link rel="icon" href="favicon.ico">
-    <!--setting color for headings--> 
+    <!--setting color for text elements--> 
     <style>
+        
         h3 {
             color: hsl(50, 90%, 40%)
         }
@@ -21,9 +22,21 @@
         h4 {
             color : darkcyan
         }
-
+       
         p {
             background-color: yellow;
+        }
+
+        .Attendance{
+            width: 1em;
+        }
+        
+        .notes{
+            width: 10cm;
+        }
+
+        .whiteboard{
+            width: 250px;
         }
     </style>
   </head>
@@ -59,7 +72,7 @@
        
         <hr>
 
-        <div class = "Attendance">
+        <div class = "Attendance" px>
             <h3>
                 Attendance:
             </h3>
@@ -75,7 +88,7 @@
         <hr>
 
         <section>
-            <div id="notes">
+            <div class="notes" cm>
                 <h3>
                     Notes and Comments:
                 </h3>
@@ -87,10 +100,10 @@
                 </ol>
             </div>
         
-            <span>
+            <div class = "whiteboard" px>
                 Whiteboards for App UI:
                 <img src="lab2whiteboard.png" alt="UI example" width="500" height="300">
-            </span>
+            </div>
 
             <div>
                 <h3>Audio and Video from Whiteboarding</h3>
