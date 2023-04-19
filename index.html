@@ -39,8 +39,12 @@
         .whiteboard{
             width: 250px;
             display: whiteboard;
-            border: 2px solid blue;
-            margin: auto
+            border: 2px solid black;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
         .navigation{
@@ -52,6 +56,17 @@
         
         .header{
             margin: 1lh 2lh 3lh;
+        }
+        
+        .AV{
+            padding: 5px 5px 5px 5px
+        }
+
+        .form{
+            border-color: blue;
+            border-style: groove;
+            border-width: 2px;
+            border-radius: 5px;
         }
     </style>
   </head>
@@ -117,13 +132,12 @@
                     <li> Janice sucks at drawing <i>lol</i></li>
                 </ol>
             </div>
-        
+            Whiteboards for App UI:
             <div class = "whiteboard" px>
-                Whiteboards for App UI:
                 <img src="lab2whiteboard.png" alt="UI example" width="500" height="300">
             </div>
 
-            <div>
+            <div class="AV">
                 <h3>Audio and Video from Whiteboarding</h3>
                 <video width = "320" height = "240" controls>
                     <source src = "whiteboard_video.mp4" type = "video/mp4">
@@ -148,38 +162,40 @@
 
     <fieldset>
         <h3>Post Meeting Form</h3>
-        <form action="/action_page.php" method="get">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="date">Today's date:</label>
-            <input type="date" id="date" name="date"><br>
-            <label for="reasons">Meeting ran too long:</label>
-
-            <textarea id = "reasons">Why did it run too long?</textarea>
-            <input type="radio" id="rsvp" name="rsvp"><br>
-            Availiable for happy hour after: <input type="checkbox"> <br>
-
-            Choose flavor for ice cream social:<br>
-            <input list="ice-cream-social">
-            <datalist id="ice-cream-social">
-                <option value = "Vanilla"></option>
-                <option value = "Chocolate"></option>
-                <option value = "Strawberry"></option>
-                <option value = "Rocky Road"></option>
-                <option value = "Pistachio"></option>
-            </datalist> <br>
-
-            <label for="toppings">Choose a topping:</label>
-                <select name="Toppings" id="toppings">
-                <option value="Fudge">Fudge</option>
-                <option value="Oreos">Oreos</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Caramel">Peanuts</option> 
-                </select> <br>
-            <input type="button" value="Submit"> 
-          </form>
+        <div class = "form">
+            <form action="/action_page.php" method="get">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="date">Today's date:</label>
+                <input type="date" id="date" name="date"><br>
+                <label for="reasons">Meeting ran too long:</label>
+    
+                <textarea id = "reasons">Why did it run too long?</textarea>
+                <input type="radio" id="rsvp" name="rsvp"><br>
+                Availiable for happy hour after: <input type="checkbox"> <br>
+    
+                Choose flavor for ice cream social:<br>
+                <input list="ice-cream-social">
+                <datalist id="ice-cream-social">
+                    <option value = "Vanilla"></option>
+                    <option value = "Chocolate"></option>
+                    <option value = "Strawberry"></option>
+                    <option value = "Rocky Road"></option>
+                    <option value = "Pistachio"></option>
+                </datalist> <br>
+    
+                <label for="toppings">Choose a topping:</label>
+                    <select name="Toppings" id="toppings">
+                    <option value="Fudge">Fudge</option>
+                    <option value="Oreos">Oreos</option>
+                    <option value="Peanuts">Peanuts</option>
+                    <option value="Caramel">Peanuts</option> 
+                    </select> <br>
+                <input type="button" value="Submit"> 
+              </form>
+        </div>
     </fieldset>
   </body>
 </html>
