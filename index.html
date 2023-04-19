@@ -28,7 +28,8 @@
         }
 
         .Attendance{
-            width: 1em;
+            width: 10pc;
+            margin: 1rem 2rem 3rem 4rem
         }
         
         .notes{
@@ -37,19 +38,36 @@
 
         .whiteboard{
             width: 250px;
+            display: whiteboard;
+            border: 2px solid blue;
+            margin: auto
+        }
+
+        .navigation{
+            margin-top: 1em;
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 5em;
+        }
+        
+        .header{
+            margin: 1lh 2lh 3lh;
         }
     </style>
   </head>
 
   <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Meetings</a></li>
-        </ul>
-      </nav>
-    <a href="#notes">Meeting Whiteboards</a>
-    <header>
+    <div class = "navigation">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Meetings</a></li>
+            </ul>
+          </nav>
+        <a href="#notes">Meeting Whiteboards</a>
+    </div>
+    
+    <header class = "header">
         
         <h1>
             <em>Making a Web-Based Messaging Application Brainstorm </em>
@@ -72,7 +90,7 @@
        
         <hr>
 
-        <div class = "Attendance" px>
+        <div class = "Attendance" pc>
             <h3>
                 Attendance:
             </h3>
