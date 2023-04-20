@@ -15,12 +15,8 @@
             font-family: webFont
         }
 
-        h3 {
-            color: hsl(50, 90%, 40%);
-        }
-        h2 { 
-            color: #5702ac;
-            text-decoration: dashed;
+        h2, h3 {
+            color: hsl(163, 91%, 26%);
         }
 
         h1 {
@@ -134,10 +130,36 @@
             background-color: beige;
         }
 
+        #form{
+            background-color: aqua;
+        }
+
         @media screen and (min-width: 500px){
             body {
                 background-color: red;
             }
+        }
+
+        label[for]{
+            color: red;
+        }
+        /*descendant combinator*/
+        section div{
+            color:blueviolet
+        }
+        /*adjacent sibling combinator*/
+        hr + section{
+            background-color: gray;
+        }
+        /*general sibling combinator*/
+        div ~ p{
+            background-color: deeppink;
+        }
+
+        /*combining two selectors*/
+
+        p.yesorange{
+            color: orange; 
         }
     </style>
   </head>
@@ -233,7 +255,7 @@
 
     <fieldset>
         <h3>Post Meeting Form</h3>
-        <div class = "form">
+        <div id = "form">
             <form action="/action_page.php" method="get">
                 <label for="fname">First name:</label>
                 <input type="text" id="fname" name="fname"><br>
@@ -283,6 +305,18 @@
         <div> 2 </div>
         <div> 3 </div>
         <div> 4 </div>
+    </div>
+
+    <h1> Using a ~ combinator</h1>
+    <div>
+        <p>foo</p>
+    </div>
+    <p>foobar</p>
+
+    <h1> Combining two selectors</h1>
+    <div>
+        <p class="yesorange"> I'm orange</p>
+        <p> I'm not orange</p>
     </div>
   </body>
 </html>
