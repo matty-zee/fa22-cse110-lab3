@@ -6,7 +6,15 @@
     <link rel="icon" href="favicon.ico">
     <!--setting color for text elements--> 
     <style>
-        
+        @font-face {
+            font-family: webFont;
+            src: url(ComicNeue-Regular.ttf);
+        }
+
+        *{
+            font-family: webFont
+        }
+
         h3 {
             color: hsl(50, 90%, 40%);
         }
@@ -120,6 +128,16 @@
         .container2 > div{
             background-color: blueviolet;
             border: 1px solid black
+        }
+
+        body{
+            background-color: beige;
+        }
+
+        @media screen and (min-width: 500px){
+            body {
+                background-color: red;
+            }
         }
     </style>
   </head>
