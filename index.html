@@ -106,6 +106,21 @@
             background-color: blue;
             color: orange;
         }
+
+        .container2{
+            display: grid;
+            margin: 25px;
+            padding: 25px;
+            background-color: aqua;
+            column-gap: 50px;
+            row-gap: 50px;
+            grid-template-columns: auto auto auto;
+        }
+
+        .container2 > div{
+            background-color: blueviolet;
+            border: 1px solid black
+        }
     </style>
   </head>
 
@@ -242,6 +257,14 @@
         <div>Thingy</div>
         <div>Majig</div>
         <div>Mabob</div>
+    </div>
+
+    <h1> Exploring Grids </h1>
+    <div class = "container2">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+        <div> 4 </div>
     </div>
   </body>
 </html>
