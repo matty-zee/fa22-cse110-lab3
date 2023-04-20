@@ -90,6 +90,22 @@
         a:active{
             color:blueviolet;
         }
+
+        .container{
+            display: flex;
+            align-items: stretch;
+            align-content: space-around;
+            justify-content: space-evenly;
+            height: 80px;
+            background-color: purple;
+        }
+
+        .container > div {
+            margin: 5px;
+            padding: 10px;
+            background-color: blue;
+            color: orange;
+        }
     </style>
   </head>
 
@@ -220,5 +236,12 @@
               </form>
         </div>
     </fieldset>
+
+    <h1> Exploring Flexbox</h1>
+    <div class = "container">
+        <div>Thingy</div>
+        <div>Majig</div>
+        <div>Mabob</div>
+    </div>
   </body>
 </html>
